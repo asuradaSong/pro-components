@@ -1,0 +1,73 @@
+{
+  "name": "pro-components",
+  "description": "基于ant-design-vue4.x封装的高阶组件",
+  "private": true,
+  "scripts": {
+    "version": "gulp version  --gulpfile ./scripts/gulpfile.ts",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git status && git add -A && git-cz"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@rushstack/eslint-patch": "^1.5.1",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/fs-extra": "^11.0.2",
+    "@types/gulp": "^4.0.14",
+    "@types/node": "^20.8.3",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "@vue/test-utils": "^2.4.1",
+    "@vue/tsconfig": "^0.4.0",
+    "ant-design-vue": "^4.0.3",
+    "chalk": "^5.3.0",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.7.1",
+    "eslint": "^8.51.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "fs-extra": "^11.1.1",
+    "gulp": "^4.0.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11",
+    "vite-plugin-dts": "^3.6.0",
+    "vitest": "^0.34.6",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.16",
+    "yargs-parser": "^21.1.1"
+  },
+  "packageManager": "pnpm@8.6.12",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,json}": [
+      "prettier --write"
+    ],
+    "*.{js,ts,tsx,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  }
+}

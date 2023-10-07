@@ -1,0 +1,7 @@
+**/*.svg
+**/dist
+**/lib
+**/es
+**\__snapshots__\**
+pnpm-lock.yaml
+node_modules

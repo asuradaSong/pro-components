@@ -1,0 +1,33 @@
+node_modules
+
+# production
+**/dist
+/.vscode
+**/**/lib/**
+**/**/es/**
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+.jest
+jest/**
+/coverage
+.idea
+pnpm-lock.yaml
+package-lock.json
+*bak
+.vscode
+
+# visual studio code
+.history
+*.log
+
+functions/mock
+.temp/**
+
+# screenshot
+screenshot
+.firebase
+.eslintcache
+.changelogs
+.changelog.md
